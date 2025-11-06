@@ -1,30 +1,25 @@
 {
   "expo": {
-    "name": "i_movies",
+    "name": "I_Movies",
     "slug": "i_movies",
     "version": "1.0.0",
-
-    "scheme": "i_movies",
+    "scheme": "movies",
     "platforms": ["ios", "android"],
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/images/movie.png"
     },
     "plugins": ["expo-router"],
     "experiments": {
       "typedRoutes": true,
-
       "tsconfigPaths": true
     },
-
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-
-    "userInterfaceStyle": "light",
-
+    "icon": "./assets/images/movie.png",
+    "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/images/movie.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -34,7 +29,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/movie.png",
         "backgroundColor": "#ffffff"
       }
     }
