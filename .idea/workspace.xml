@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c518f4e3-8cdf-48a2-9c4f-16fd7ec1b968" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/services/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/useFetch.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/index.tsx" afterDir="false" />
+    <list default="true" id="c518f4e3-8cdf-48a2-9c4f-16fd7ec1b968" name="Changes" comment="Added movie fetching logic">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +120,7 @@
       <workItem from="1762423975193" duration="6149000" />
       <workItem from="1762433971456" duration="4036000" />
       <workItem from="1762760558640" duration="2438000" />
-      <workItem from="1762777243535" duration="4233000" />
+      <workItem from="1762777243535" duration="4819000" />
     </task>
     <task id="LOCAL-00001">
       <option name="closed" value="true" />
@@ -141,6 +138,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="unversioned files" />
-    <option name="LAST_COMMIT_MESSAGE" value="unversioned files" />
+    <MESSAGE value="Added movie fetching logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added movie fetching logic" />
   </component>
 </project>
