@@ -3,9 +3,17 @@ import { images } from '@/constants/images';
 import { Image, ScrollView, View } from 'react-native';
 import SearchBar from '@/components/SearchBar';
 import { useRouter } from 'expo-router';
+import useFetch from '@/services/useFetch';
+import { fetchMovies } from '@/services/api';
 
 export default function Home() {
   const router = useRouter();
+
+  const {
+    data: movies,
+    isLoading: moviesLoading,
+    error: moviesError,
+  } = useFetch(() => fetchMovies({ query: '' }));
 
   return (
     <View className="flex-1 bg-primary">
