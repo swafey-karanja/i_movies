@@ -1,11 +1,11 @@
+import MovieCard from '@/components/MovieCard';
+import SearchBar from '@/components/SearchBar';
 import { icons } from '@/constants/icons';
 import { images } from '@/constants/images';
-import { ActivityIndicator, FlatList, Image, ScrollView, Text, View } from 'react-native';
-import SearchBar from '@/components/SearchBar';
-import { useRouter } from 'expo-router';
-import useFetch from '@/services/useFetch';
 import { fetchMovies } from '@/services/api';
-import MovieCard from '@/components/MovieCard';
+import useFetch from '@/services/useFetch';
+import { useRouter } from 'expo-router';
+import { ActivityIndicator, FlatList, Image, ScrollView, Text, View } from 'react-native';
 
 export default function Home() {
   const router = useRouter();
@@ -17,7 +17,7 @@ export default function Home() {
   } = useFetch(() => fetchMovies({ query: '' }));
 
   return (
-    <View className="flex-1 bg-primary">
+    <View className="flex-1 bg-primary py-5">
       <Image source={images.bg} className="absolute z-0 w-full" />
 
       <ScrollView

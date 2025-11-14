@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c518f4e3-8cdf-48a2-9c4f-16fd7ec1b968" name="Changes" comment="Added movie fetching logic">
-      <change afterPath="$PROJECT_DIR$/components/MovieCard.tsx" afterDir="false" />
+    <list default="true" id="c518f4e3-8cdf-48a2-9c4f-16fd7ec1b968" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/services/api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +68,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/swafey/Documents/personal/Mobile Development'/i_movies/assets/images",
+    "last_opened_file_path": "C:/Users/swafey/Documents/personal/Mobile Development'/i_movies",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -84,11 +81,6 @@
     "to.speed.mode.migration.done": "true",
     "ts.external.directory.path": "C:\\Users\\swafey\\Documents\\personal\\Mobile Development'\\i_movies\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "repository"
-    ]
   }
 }]]></component>
   <component name="ReactDesignerToolWindowState">
@@ -128,8 +120,8 @@
       <workItem from="1762423975193" duration="6149000" />
       <workItem from="1762433971456" duration="4036000" />
       <workItem from="1762760558640" duration="2438000" />
-      <workItem from="1762777243535" duration="5297000" />
-      <workItem from="1762843100342" duration="5905000" />
+      <workItem from="1762777243535" duration="4819000" />
+      <workItem from="1763033070011" duration="30000" />
     </task>
     <task id="LOCAL-00001">
       <option name="closed" value="true" />
