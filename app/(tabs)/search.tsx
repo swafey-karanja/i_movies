@@ -4,8 +4,9 @@ import { icons } from '@/constants/icons';
 import { images } from '@/constants/images';
 import { Movie } from '@/interfaces/interfaces';
 import { fetchMovies } from '@/services/api';
+import { updateSearchCount } from '@/services/appWrite';
 import useFetch from '@/services/useFetch';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, FlatList, Image, Text, View } from 'react-native';
 
 const Search = () => {
@@ -15,9 +16,29 @@ const Search = () => {
     data: movies = [],
     isLoading: moviesLoading,
     error: moviesError,
+    refetch: loadMovies,
+    reset,
   } = useFetch(() => fetchMovies({ query: searchQuery }), false);
 
-  console.log(searchQuery);
+  // 1) Fetch movies when search query changes
+  useEffect(() => {
+    const timeOutId = setTimeout(async () => {
+      if (searchQuery.trim()) {
+        await loadMovies();
+      } else {
+        reset();
+      }
+    }, 500);
+
+    return () => clearTimeout(timeOutId);
+  }, [searchQuery]);
+
+  // 2) After movies update, track search
+  useEffect(() => {
+    if (movies?.length > 0 && searchQuery.trim()) {
+      updateSearchCount(searchQuery, movies[0]);
+    }
+  }, [movies]);
 
   return (
     <View className="flex-1 bg-primary py-5">
@@ -54,7 +75,7 @@ const Search = () => {
               <Text className="my-3 px-5 text-red-500">Error: {moviesError.message}</Text>
             )}
 
-            {!moviesLoading && !moviesError && searchQuery.trim() && movies?.length > 0 && (
+            {!moviesLoading && !moviesError && searchQuery.trim() && movies?.length !== 0 && (
               <Text className="text-xl font-bold text-white">
                 Search Results for <Text className="text-accent">{searchQuery}</Text>
               </Text>
